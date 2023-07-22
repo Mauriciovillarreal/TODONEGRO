@@ -1,0 +1,551 @@
+/* Variables*/
+@import "partials/fonts";
+@import "partials/variable";
+@import "partials/reset";
+@import "partials/mixins";
+
+/* Princio - navbar*/
+.navbar__principio {
+    font-family: 'Montserrat-VariableFont_wght';
+    display: grid;
+    grid-template-columns: 100%;
+    font-size: $fontSizeS;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    .navbar__btn {
+        font-family: 'Montserrat-VariableFont_wght';
+        font-size: $fontSizeML;
+    }
+
+    a {
+        font-family: 'Montserrat-VariableFont_wght';
+        font-size: $fontSizeM;
+        border: 2px transparent solid;
+
+        &:hover {
+            border-top: 00, 999px solid;
+            border-bottom: 2px solid;
+            transition: 0.1s;
+            object-fit: cover;
+        }
+    }
+}
+
+/* Fin - navbar*/
+/* Principio img banner */
+.bg__img1 {
+    background-image: url(../img/banner1.png);
+}
+
+.bg__img2 {
+    background-image: url(../img/banner2.png);
+}
+
+.bg__img3 {
+    background-image: url(../img/banner3.png);
+}
+
+.bg__img4 {
+    background-image: url(../img/banner4.png);
+}
+
+.bg__img5 {
+    background-image: url(../img/banner5.png);
+}
+
+.carousel-img {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fin img banner */
+/* Principio - Cuotas info*/
+.grid__cuotas {
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    padding-top: 15px;
+
+    .cuota {
+        text-align: end;
+        font-size: $fontSizeXXL;
+    }
+
+    .text__compras {
+        line-height: 0.5;
+        font-size: $fontSizeMS;
+    }
+
+    .text__sinint {
+        padding-top: 18px;
+        padding-left: 10px;
+        text-align: start;
+        font-size: $fontSizeL;
+    }
+
+    .border__mid {
+        border-left: 1px solid;
+    }
+}
+
+/* Fin - Cuotas info*/
+/* PRINCIPIO BTN WHATSAPP*/
+.whatsapp__fixed {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    display: block;
+}
+
+/* FIN BTN WHATSAPP*/
+/* Principio - Introduccion todonegro*/
+.intro__tn {
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    margin-top: 2px;
+    font-size: $fontSizeM;
+    text-align: center;
+    padding: 5px;
+
+    b {
+        font-family: 'Montserrat-VariableFont_wght';
+    }
+
+    .intro__tn--textizq {
+        text-align: center;
+        padding: 1px;
+        margin-bottom: 25px;
+    }
+
+    img {
+        padding-bottom: 8px;
+    }
+}
+
+.intro__tn--imginstagram {
+    padding-top: 20px;
+
+    img {
+        display: inline;
+        padding: 2px;
+    }
+}
+
+/* Fin - Introduccion todonegro */
+/* Principio - Carrousel info*/
+.carousel__estilos {
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    font-size: $fontSizeMS;
+}
+
+/* Fin - Carrousel info*/
+/* Principio - Accesos a ventas*/
+.grid__tarjetas--acceso {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+
+    .tarjeta__acceso--venta {
+        margin: 15px;
+        display: flex;
+        text-align: center;
+        border-radius: 12px;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    p {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        object-fit: cover;
+        padding: 2px 30px;
+        font-size: $fontSizeM;
+        font-family: 'WixMadeforDisplay-VariableFont_wght';
+    }
+
+    img {
+        transition: 1.1s;
+        border-radius: $fontSizeM;
+
+        &:hover {
+            transform: scale(1.2);
+            opacity: 0.6;
+        }
+    }
+}
+
+/* FIN - Accesos a ventas*/
+/* Principio - New in*/
+.card__newin1 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin1.png);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+
+.card__newin2 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin2.png);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+
+.card__newin3 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin3.png);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+
+.card__newin4 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin4.jpg);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+
+.card__newin5 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin5.jpg);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+
+.card__newin6 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin6.jpg);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+.card__newin7 {
+    @include new_in (100%, 520px, flex, flex-end, hidden, cover, center);
+    margin-top: 10px;
+    background-image: url(../img/newin7.jpg);
+    &:hover .content__newin {
+        transform: translateY(0);
+    }
+}
+
+.content__newin {
+    text-align: left;
+    margin: 5px 15px 80px 15px;
+    font-family: 'Montserrat-VariableFont_wght';
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: block;
+    background: rgba(0, 0, 0, 0.600);
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.35s ease;
+    border-radius: 5px;
+    h5 {
+        font-size: $fontSizeXL;
+        text-align: center;
+    }
+    h6 {
+        padding-top: 50px;
+        font-size: $fontSizeML;
+    }
+    p {
+        padding: 0 15px 0px 15px;
+        display: inline;
+        background-color: rgb(75, 117, 255);
+        font-size: $fontSizeM;
+    }
+}
+/* FIN - New in*/
+/* Principio - Lista ventas*/
+.grilla__venta--estilo {
+    margin-top: 10px;
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    font-size: $fontSizeMS;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+    h2 {
+        font-size: $fontSizeML;
+        padding: 2px;
+        text-align: left;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0px 15px 0px 15px;
+        text-align: center;
+        width: 90%;
+        height: 18px;
+        color: white;
+        background-color: rgb(75, 117, 255);
+        font-size: $fontSizeM;
+        margin-bottom: 5px;
+    }
+    button {
+        padding: 2px 25px;
+        margin: 10px;
+    }
+}
+
+.hover__listaventas {
+    overflow: hidden;
+    justify-content: center;
+
+    img {
+        transition: 0.8s;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.btn-outline-secondary {
+    font-size: $fontSizeM;
+}
+
+/* Fin - Lista ventas*/
+/* INICIO FOOTER*/
+footer {
+    @include sizes (100%, 100%);
+    margin-top: 52px;
+    color: rgb(0, 0, 0);
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    font-size: $fontSizeMS;
+    margin-bottom: 15px;
+
+    h6 {
+        padding-top: 20px;
+    }
+
+    .input-group {
+        input {
+            margin-top: 20px;
+            height: 30px;
+        }
+
+        button {
+            @include sizes (100%, 30px);
+            text-align: center;
+            padding: 1px;
+            margin-top: 20px;
+        }
+    }
+
+    iframe {
+        margin: 14px 0px 15px 0px;
+    }
+
+    .footer__estilos a {
+        font-size: $fontSizeMS;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: $fontSizeMS;
+
+        img {
+            padding: 5px 2px;
+        }
+    }
+
+    .footer__ubicacion {
+        padding: 15px 0px 0px 10px;
+        font-size: $fontSizeMS;
+    }
+
+    .corazon:hover {
+        transition: 0.8s;
+        object-fit: cover;
+        transform: scale(1.04);
+    }
+
+    .div__line {
+        margin-top: 20px;
+        border-top: 1px solid rgb(221, 221, 221);
+    }
+}
+
+.bkfooter {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px;
+    color: white;
+    border-radius: 10px;
+    font-size: $fontSizeM;
+    margin: 5px 5px 0px 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    .footer__res {
+        padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .footer__copy {
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: $fontSizeM;
+    }
+
+    p {
+        padding-left: 25px;
+        display: inline-block;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: $fontSizeM;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+/* Fin FOOTER*/
+@import "partials/condicionales";
+@import "partials/queries";
+
+/* INICIO inicio/PRODUCTOS */
+.enlace__productos {
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    margin: 10px;
+}
+
+.enlace__productos--estilo {
+    font-size: 10px;
+    margin: 23px;
+    color: rgb(107, 107, 107);
+}
+
+.enlace__productos--estilo span {
+    color: rgb(0, 0, 0);
+}
+
+/* FIN inicio/PRODUCTOS */
+/* INICIO inicio/DEVOLUCIONES */
+.mot_dev {
+    margin: 40px 40px 40px 100px;
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    font-size: 14px;
+}
+
+.devoluciones__ayuda {
+    margin: 40px 40px 40px 20px;
+    font-family: 'WixMadeforDisplay-VariableFont_wght';
+    font-size: 14px;
+}
+
+/* FIN inicio/DEVOLUCIONES */
+/* INICIO inicio/SALE */
+.off30 {
+    font-family: 'Montserrat-VariableFont_wght';
+    font-size: $fontSizeMS;
+    padding-bottom: 65px;
+    span {
+        color: red;
+        font-size: $fontSizeXL;
+    }
+}
+.bannersale__position {
+    margin-top: 85px;
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+.precio__sale {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.precio__sale--desc {
+    text-align: right;
+}
+
+.precio__sale--tachada {
+    text-align: left;
+}
+
+/* FIN inicio/SALE */
+/* INICIO inicio/CONTACTO */
+.margin__contacto {
+    margin-top: 50px;
+    text-align: left;
+}
+.margin {
+    margin-top: 25px;
+}
+.form-title {
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Montserrat-VariableFont_wght";
+}
+.form-group .form-control {
+    border-bottom: 1px;
+    border-style: none none solid none;
+    border-radius: 0;
+    border-color: #000;
+}
+.form-group .form-control:focus {
+    box-shadow: none;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+}
+textarea {
+    resize: none;
+}
+.btn-mod.btn-large {
+    height: auto;
+    padding: 2px 150px;
+    font-size: 13px;
+}
+.btn-mod.btn-border {
+    color: #000000;
+    border: 1px solid #000000;
+    background: transparent;
+}
+.btn-mod.btn-border:hover,
+.btn-mod.btn-border:active,
+.btn-mod.btn-border:focus,
+.btn-mod.btn-border:active:focus {
+    color: #fff;
+    border-color: #000;
+    background: #838383;
+    outline: none;
+}
+/* FIN inicio/CONTACTO */

@@ -1,0 +1,19 @@
+$week:"none";
+
+@if($week == "mate") {
+    .bg__img1 {
+        background-image: url(../img/semana_mate3.jpg);
+    }
+    .bg__img2 {
+        background-image: url(../img/semana_mate2.jpg);
+    }
+    .bg__img3 {
+        background-image: url(../img/semana_mate.jpg);
+    }
+    .bg__img4 {
+        background-image: url(../img/semana_mate4.jpg);
+    }
+    .bg__img5 {
+        background-image: url(../img/semana_mate5.jpg);
+    }
+}

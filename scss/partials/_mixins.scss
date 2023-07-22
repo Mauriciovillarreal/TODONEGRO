@@ -1,0 +1,13 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin new_in ($width, $height, $display, $align-items, $overflow, $size, $position) {
+    width: $width;
+    height: $height;
+    display: $display;
+    align-items: $align-items;
+    overflow: $overflow;
+    background-size: $size;
+    background-position: $position;
+}
