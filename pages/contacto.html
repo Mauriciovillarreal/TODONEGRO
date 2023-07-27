@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactanos: +5491140507287 - ventas@todonegro.com; Zona Ramos Mejia">
+    <meta name="keyword" content="ventas, totalblack, mate, ropanegra, bolsos, gorras, sport">
     <link rel="icon" href="../img/todonegro.ico">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -56,12 +57,9 @@
                                 <a class="nav-link" href="./devoluciones.html">DEVOLUCIONES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sale.html">SALE <img src="../img/flamasale.png"
-                                        width="13px" alt="flama">
+                                <a class="nav-link" href="./sale.html">SALE <img src="../img/flamasale.png" width="13px"
+                                        alt="flama">
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">PROMOCIONES BANCARIAS</a>
                             </li>
                         </ul>
                     </div>
@@ -113,6 +111,13 @@
         </div>
         <!---------- Carrousel banner fin ------------>
     </header>
+        <!---------- Boton whatsapp principio ---------->
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=5491140507287" target="_blank" class="whatsapp__fixed">
+                <img src="../img/whatsapp.png" width="42px" alt="Boton acceso WhatsApp">
+            </a>
+        </div>
+        <!---------- Boton whatsapp fin ---------->
     <div class="enlace__productos">
         <div class="enlace__productos--estilo">Inicio / <span>Contactanos</span> </div>
         <h1 class="h1 text-center">CONTACTANOS</h1>
@@ -145,7 +150,8 @@
                 </div>
             </div>
             <div class="col">
-                <form id="contact-form" name="myForm" class="form" method="POST" role="form">
+                <form id="contact-form" name="myForm" class="form" method="POST" role="form"
+                    action="https://formspree.io/f/mvojgepl" method="POST">
                     <div class="form-group">
                         <label class="form-label" id="nameLabel" for="name"></label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" tabindex="1">
@@ -174,8 +180,8 @@
     </div>
     </main>
     <footer>
-        <main class="container">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel__bk div__line" data-bs-ride="carousel">
+        <main class="container div__line">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel__bk" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active carousel__estilos">
                         <img src="../img/envios.png" width="60px" alt="Envios">
@@ -283,6 +289,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="../js/bootstrap.js"></script>
 </body>
 

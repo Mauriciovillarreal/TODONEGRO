@@ -38,8 +38,7 @@
   font-size: 12px;
   border: 2px transparent solid;
 }
-.navbar a:hover {
-  border-top: 0, 999px solid;
+.nav-link:hover {
   border-bottom: 2px solid;
   transition: 0.1s;
   -o-object-fit: cover;
@@ -111,8 +110,7 @@
   z-index: 999;
   display: block;
 }
-.whatsapp__fixed:before,
-.whatsapp__fixed:after {   
+.whatsapp__fixed:before, .whatsapp__fixed:after {
   content: "";
   position: absolute;
   width: 40px;
@@ -134,6 +132,7 @@
   position: relative;
   z-index: 2;
 }
+
 @keyframes onda {
   0% {
     transform: scale(1);
@@ -146,7 +145,6 @@
     transform: scale(2.2);
   }
 }
-
 /* FIN BTN WHATSAPP*/
 /* Principio - Introduccion todonegro*/
 .intro__tn {
@@ -164,7 +162,7 @@
 }
 .intro__tn .intro__tn--textizq {
   text-align: center;
-  padding: 0px 25px;
+  padding: 1px;
   margin-bottom: 25px;
 }
 .intro__tn img {
@@ -212,7 +210,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   padding: 2px 30px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: "WixMadeforDisplay-VariableFont_wght";
 }
 .grid__tarjetas--acceso img {
@@ -360,7 +358,7 @@
 /* Principio - Lista ventas*/
 .grilla__venta--estilo {
   margin-top: 10px;
-  font-family: "Montserrat-VariableFont_wght";
+  font-family: "WixMadeforDisplay-VariableFont_wght";
   font-size: 15px;
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -374,15 +372,14 @@
   margin-bottom: 50px;
 }
 .grilla__venta--estilo span {
-  font-family: "WixMadeforDisplay-VariableFont_wght";
   display: inline-block;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 15px 0px 15px;
   text-align: center;
   width: 90%;
   height: 18px;
   color: white;
   background-color: rgb(75, 117, 255);
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 5px;
 }
 .grilla__venta--estilo button {
@@ -499,14 +496,12 @@ footer .div__line {
   font-family: "WixMadeforDisplay-VariableFont_wght";
   margin: 10px;
 }
-
-.enlace__productos--estilo {
+.enlace__productos .enlace__productos--estilo {
   font-size: 10px;
   margin: 23px;
   color: rgb(107, 107, 107);
 }
-
-.enlace__productos--estilo span {
+.enlace__productos span {
   color: rgb(0, 0, 0);
 }
 
@@ -526,6 +521,12 @@ footer .div__line {
 
 /* FIN inicio/DEVOLUCIONES */
 /* INICIO inicio/SALE */
+.bannersale__position {
+  margin-top: 85px;
+  width: 100%;
+  margin-bottom: 65px;
+}
+
 .off30 {
   font-family: "Montserrat-VariableFont_wght";
   font-size: 15px;
@@ -536,24 +537,27 @@ footer .div__line {
   font-size: 45px;
 }
 
-.bannersale__position {
-  margin-top: 85px;
-  width: 100%;
-  margin-bottom: 65px;
-}
-
 .precio__sale {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
 }
-
-.precio__sale--desc {
+.precio__sale strike {
+  text-align: left;
+  margin-left: 20px;
+}
+.precio__sale .precio__sale--desc {
   text-align: right;
+  margin-right: 20px;
 }
 
-.precio__sale--tachada {
-  text-align: left;
+.venta__cuotas {
+  text-align: center;
+  background-color: rgb(255, 94, 94);
+  margin-left: 20px;
+  height: 17px;
+  padding: 0px 1px;
+  font-size: 12px;
 }
 
 /* FIN inicio/SALE */
@@ -567,20 +571,12 @@ footer .div__line {
   margin-top: 25px;
 }
 
-.form-title {
-  padding: 25px;
-  font-size: 30px;
-  font-weight: 300;
-  font-family: "Montserrat-VariableFont_wght";
-}
-
 .form-group .form-control {
   border-bottom: 1px;
   border-style: none none solid none;
   border-radius: 0;
   border-color: #000;
 }
-
 .form-group .form-control:focus {
   box-shadow: none;
   border-width: 0 0 2px 0;
