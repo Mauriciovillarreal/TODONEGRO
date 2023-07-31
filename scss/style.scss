@@ -431,7 +431,7 @@ footer {
         }
     }
 
-    .footer__ubicacion {
+    .footer__padding {
         padding: 15px 0px 0px 10px;
         font-size: $fontSizeMS;
     }
@@ -553,12 +553,15 @@ footer {
 }
 
 .venta__cuotas {
+    display: inline-block;
+    padding: 0px 1px 0px 1px;
     text-align: center;
-    background-color: rgb(255, 94, 94);
-    margin-left: 20px;
-    height: 17px;
-    padding: 0px 1px;
-    font-size: 12px;
+    width: 100%;
+    height: 18px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 103, 103);
+    font-size: 11px;
+    margin-bottom: 5px;
 }
 
 /* FIN inicio/SALE */
