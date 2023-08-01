@@ -153,7 +153,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 300px;
   margin-top: 2px;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   padding: 5px;
 }
@@ -170,7 +170,7 @@
 }
 
 .intro__tn--imginstagram {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 .intro__tn--imginstagram img {
   display: inline;
@@ -182,7 +182,7 @@
 .carousel__estilos {
   font-family: "WixMadeforDisplay-VariableFont_wght";
   text-align: center;
-  margin-top: 45px;
+  margin-top: 95px;
   margin-bottom: 50px;
   font-size: 15px;
 }
@@ -626,6 +626,9 @@ textarea {
     border: none;
     font-size: 20px;
   }
+  .carousel__estilos {
+    margin-top: 55px;
+  }
   .intro__tn {
     grid-template-columns: 100%;
     border: none;
@@ -639,7 +642,7 @@ textarea {
 @media screen and (max-width: 500px) {
   .navbar a {
     font-size: 15px;
-}
+  }
   .grid__cuotas .cuota {
     font-size: 65px;
   }
